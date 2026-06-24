@@ -1,0 +1,785 @@
+/* ===================================
+   RESPONSIVE DESIGN - TABLETS & MOBILE
+   =================================== */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Navigation */
+    .nav-menu {
+        gap: 1rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    /* Header */
+    .logo-large {
+        font-size: 3rem;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header-stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .stat {
+        padding: 1rem;
+    }
+
+    .stat h3 {
+        font-size: 2rem;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 4rem 20px;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* Sections */
+    .section {
+        padding: 3rem 20px;
+    }
+
+    /* About */
+    .about-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .credentials {
+        order: 2;
+    }
+
+    /* Cards */
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    .card-icon {
+        font-size: 2.5rem;
+    }
+
+    /* Clock */
+    .clocks-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .clock-time {
+        font-size: 2rem;
+    }
+
+    /* Blog */
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Testimonials */
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* FAQ */
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact Methods */
+    .contact-methods {
+        grid-template-columns: 1fr;
+    }
+
+    /* Form */
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    /* Newsletter */
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form input,
+    .newsletter-form .btn {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Dark mode toggle */
+    .dark-mode-toggle {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    /* WhatsApp float */
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        font-size: 24px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+    :root {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    /* Navigation */
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--primary-color);
+        flex-direction: column;
+        gap: 0;
+        padding: 1.5rem 0;
+        z-index: 99;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Header */
+    .header {
+        padding: 2rem 20px;
+    }
+
+    .logo-large {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .sub {
+        font-size: 0.95rem;
+    }
+
+    .tagline {
+        font-size: 0.95rem;
+        margin-top: 0.5rem;
+    }
+
+    .header-stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .stat {
+        padding: 1rem;
+    }
+
+    .stat h3 {
+        font-size: 1.8rem;
+    }
+
+    .stat p {
+        font-size: 0.8rem;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 3rem 20px;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 0.85rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    /* Sections */
+    .section {
+        padding: 2.5rem 15px;
+    }
+
+    .section h2 {
+        font-size: 1.4rem;
+    }
+
+    /* About */
+    .about-wrapper {
+        gap: 1.5rem;
+    }
+
+    .credentials {
+        padding: 1.5rem;
+    }
+
+    .credential-item {
+        gap: 0.8rem;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .credential-item .icon {
+        font-size: 1.2rem;
+    }
+
+    .credential-item h4 {
+        font-size: 0.95rem;
+    }
+
+    .credential-item p {
+        font-size: 0.8rem;
+    }
+
+    /* Cards */
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    .card-icon {
+        font-size: 2.5rem;
+    }
+
+    .card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+
+    /* Clock */
+    .clock-section {
+        padding: 3rem 15px;
+    }
+
+    .clocks-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .clock-card {
+        padding: 1rem;
+    }
+
+    .clock-display {
+        padding: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .clock-time {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    .clock-info h3 {
+        font-size: 0.95rem;
+    }
+
+    .timezone {
+        font-size: 0.75rem;
+    }
+
+    /* Blog */
+    .blog-grid {
+        gap: 1.2rem;
+    }
+
+    .blog-card {
+        border-radius: 12px;
+    }
+
+    .blog-date {
+        top: 15px;
+        right: 15px;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.8rem;
+    }
+
+    .blog-card h3 {
+        padding: 1.5rem 1.5rem 0.75rem 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .blog-card p {
+        padding: 0 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .blog-meta {
+        padding: 0 1.5rem;
+    }
+
+    .blog-category {
+        font-size: 0.75rem;
+    }
+
+    .read-more {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+
+    /* Testimonials */
+    .testimonials-grid {
+        gap: 1.2rem;
+    }
+
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+
+    .testimonial-text {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .author-avatar {
+        width: 40px;
+        height: 40px;
+        font-size: 0.95rem;
+    }
+
+    .testimonial-author h4 {
+        font-size: 0.95rem;
+    }
+
+    .author-title {
+        font-size: 0.75rem;
+    }
+
+    /* FAQ */
+    .faq {
+        padding: 2.5rem 15px;
+    }
+
+    .faq h2 {
+        margin-bottom: 2rem;
+    }
+
+    .faq-grid {
+        gap: 1rem;
+    }
+
+    .faq-question {
+        padding: 1.2rem;
+        font-size: 0.95rem;
+    }
+
+    .faq-icon {
+        font-size: 1.2rem;
+    }
+
+    .faq-answer {
+        padding: 0 1.2rem 1.2rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    /* Contact Methods */
+    .contact-methods {
+        margin-bottom: 2.5rem;
+        gap: 1.5rem;
+    }
+
+    .contact-card {
+        padding: 1.5rem;
+    }
+
+    .contact-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .contact-card p {
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Form */
+    .contact-form {
+        padding: 1.5rem;
+        margin: 0 auto;
+    }
+
+    .contact-form h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.2rem;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        padding: 0.65rem;
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+
+    .form-group textarea {
+        min-height: 100px;
+    }
+
+    /* Newsletter */
+    .newsletter {
+        padding: 2.5rem 15px;
+    }
+
+    .newsletter h2 {
+        font-size: 1.4rem;
+    }
+
+    .newsletter p {
+        font-size: 0.95rem;
+    }
+
+    .newsletter-form input {
+        margin-bottom: 1rem;
+        padding: 0.7rem 1rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 2rem 15px 1rem;
+    }
+
+    .footer-content {
+        gap: 1.5rem;
+    }
+
+    .footer-section h4 {
+        font-size: 1rem;
+    }
+
+    .footer-section p {
+        font-size: 0.85rem;
+    }
+
+    .footer-section a {
+        font-size: 0.85rem;
+    }
+
+    .social-links {
+        gap: 0.8rem;
+    }
+
+    .social-links a {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+
+    .footer-bottom {
+        padding-top: 1.5rem;
+    }
+
+    .footer-bottom p {
+        font-size: 0.8rem;
+    }
+
+    .footer-note {
+        font-size: 0.75rem;
+    }
+
+    /* Dark mode toggle */
+    .dark-mode-toggle {
+        top: 15px;
+        left: 15px;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    /* WhatsApp float */
+    .whatsapp-float {
+        bottom: 15px;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    .whatsapp-text {
+        display: none;
+    }
+}
+
+/* Extra Small Devices (360px and below) */
+@media (max-width: 360px) {
+    :root {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .logo-large {
+        font-size: 2rem;
+    }
+
+    .header h1 {
+        font-size: 1.3rem;
+    }
+
+    .header-stats {
+        gap: 0.8rem;
+    }
+
+    .stat h3 {
+        font-size: 1.5rem;
+    }
+
+    .hero h2 {
+        font-size: 1.3rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .card-icon {
+        font-size: 2rem;
+    }
+
+    .clock-card {
+        padding: 0.8rem;
+    }
+
+    .clock-time {
+        font-size: 1.3rem;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter-form {
+        gap: 0.8rem;
+    }
+}
+
+/* Large Screens (1024px and above) */
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    .section {
+        padding: 7rem 20px;
+    }
+
+    .cards {
+        gap: 2.5rem;
+    }
+
+    .card {
+        padding: 2.5rem;
+    }
+
+    .blog-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .faq-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Extra Large Screens (1400px and above) */
+@media (min-width: 1400px) {
+    .clocks-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .testimonials-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .dark-mode-toggle,
+    .whatsapp-float,
+    .hero .btn,
+    .contact-form,
+    .newsletter,
+    .footer {
+        display: none;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    .section {
+        page-break-inside: avoid;
+    }
+
+    .card,
+    .testimonial-card,
+    .blog-card {
+        page-break-inside: avoid;
+    }
+}
+
+/* Landscape Orientation */
+@media (max-height: 600px) and (orientation: landscape) {
+    .header {
+        padding: 1.5rem 20px;
+    }
+
+    .logo-large {
+        font-size: 2rem;
+    }
+
+    .header h1 {
+        font-size: 1.3rem;
+    }
+
+    .header-stats {
+        gap: 1rem;
+    }
+
+    .hero {
+        padding: 2rem 20px;
+    }
+
+    .hero h2 {
+        margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+        margin-bottom: 1rem;
+    }
+
+    .section {
+        padding: 2.5rem 20px;
+    }
+}
+
+/* Touch Devices */
+@media (hover: none) and (pointer: coarse) {
+    .btn,
+    .card,
+    .testimonial-card,
+    .blog-card {
+        transition: none;
+    }
+
+    .btn:active,
+    .card:active,
+    .testimonial-card:active {
+        transform: scale(0.98);
+    }
+
+    /* Larger touch targets */
+    .faq-question {
+        padding: 1.75rem 1.5rem;
+    }
+
+    .btn {
+        padding: 1.2rem 2.2rem;
+    }
+}
