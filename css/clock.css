@@ -1,0 +1,161 @@
+/* ===================================
+   CLOCK SECTION
+   =================================== */
+
+.clock-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #4a5551 100%);
+    padding: 5rem 20px;
+    color: var(--white);
+}
+
+.clock-section h2 {
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.clocks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clock-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+}
+
+.clock-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.3);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.clock-display {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid var(--accent-color);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.clock-time {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    font-family: 'Courier New', monospace;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(212, 165, 116, 0.5);
+    display: block;
+}
+
+.clock-info h3 {
+    color: var(--white);
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.timezone {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* ===================================
+   CLOCK ANIMATIONS
+   =================================== */
+
+@keyframes tick {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(212, 165, 116, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(212, 165, 116, 0.8);
+    }
+}
+
+.clock-time {
+    animation: tick 2s infinite;
+}
+
+/* ===================================
+   CLOCK RESPONSIVE
+   =================================== */
+
+@media (max-width: 768px) {
+    .clock-section {
+        padding: 3rem 20px;
+    }
+
+    .clock-section h2 {
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .clocks-grid {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .clock-card {
+        padding: 1.5rem;
+    }
+
+    .clock-display {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .clock-time {
+        font-size: 2rem;
+    }
+
+    .clock-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .timezone {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .clocks-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .clock-card {
+        padding: 1rem;
+    }
+
+    .clock-display {
+        padding: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .clock-time {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    .clock-info h3 {
+        font-size: 0.95rem;
+    }
+
+    .timezone {
+        font-size: 0.75rem;
+    }
+}
